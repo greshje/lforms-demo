@@ -7,32 +7,21 @@
 	</head>
 
 	<body>
-		<h1>Basic Questionnaire Example</h1>
+		<h1>Basic Questionnaire Example Using a File</h1>
 
 		<script src="/lforms-examples/lib/lforms-30.0.0/webcomponent/assets/lib/zone.min.js"></script>
 		<script src="/lforms-examples/lib/lforms-30.0.0/webcomponent/scripts.js"></script>
 		<script src="/lforms-examples/lib/lforms-30.0.0/webcomponent/runtime-es5.js"></script>
 		<script src="/lforms-examples/lib/lforms-30.0.0/webcomponent/polyfills-es5.js"></script>
 		<script src="/lforms-examples/lib/lforms-30.0.0/webcomponent/main-es5.js"></script> 
-		<script src="/lforms-examples/lib/lforms-30.0.0/fhir/R4/lformsFHIR.min.js"></script>
+		<script src="https://clinicaltables.nlm.nih.gov/lforms-versions/30.0.0/fhir/R4/lformsFHIR.min.js"></script>
 		
 		<div id="formContainer"></div>
 
 		<script>
-		var formDef = {
-				  "status": "draft",
-				  "title": "Demo Form",
-				  "resourceType": "Questionnaire",
-				  "item": [
-				    {
-				      "type": "string",
-				      "linkId": "X-002",
-				      "text": "Eye color"
-				    }
-				  ]
-				}
-
-				LForms.Util.addFormToPage(formDef, 'formContainer');
+			$.get("./weight-height-questionnaire.json", function(data) {
+				LForms.Util.addFormToPage(data, 'formContainer');
+			});
 		</script>
 
 	</body>
