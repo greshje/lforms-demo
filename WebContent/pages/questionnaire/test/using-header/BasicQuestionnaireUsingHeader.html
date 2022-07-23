@@ -1,0 +1,16 @@
+<html>
+
+    <head>
+        <script src="/lforms-examples/lib/jquery-1.11.3/jquery.min.js"></script>
+		<script>$.get('/lforms-examples/pages/header-footer/ComponentHeader.html', function(data) {$('head').append(data);});
+		</script>
+    </head>
+
+    <body>
+		<div id="lformsScripts"></div>
+        <script>$("#lformsScripts").load("/lforms-examples/pages/header-footer/ComponentBodyHeader.html");</script>
+        <h1>Basic Questionnaire Example Using Header</h1>
+    </body>
+
+</html>
+
