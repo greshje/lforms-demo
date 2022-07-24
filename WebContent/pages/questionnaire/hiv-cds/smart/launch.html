@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>SMART on FHIR Example Application (launch.html)</title>
+		<link rel="shortcut icon" type="image/x-icon" href="/lforms-examples/img/nachc-favico.png">
+		<link rel="icon" href="/lforms-examples/img/nachc-favico.png">
+	</head>
+
+	<body>
+
+		<!-- 
+		*
+		* This page is intentionally left blank.  
+		* In the EMR you might see a quick (or not so quick depending on your internet speed) flash of this page.  
+		* 
+		* -->
+
+		<!-- javascript is required -->
+		<noscript>
+			<strong>
+				Javascript is required for this functionality to work.    
+			</strong>
+		</noscript>
+
+		<!-- a div to hold an error message if we are unable to authenticate -->
+		<div id="error"></div>
+
+		<!-- standard fhir javascipt libs -->
+		<script src='/lforms-examples/lib/smart/fhir-client-v0.1.12.js'></script>
+		<script src='/lforms-examples/lib/smart/fhir-client-cerner-additions-1.0.0.js'></script>
+
+		<script>
+			try {
+				FHIR.oauth2.authorize({
+					'client_id' : 'MY_CLIENT_ID',
+					'scope' : 'patient/Patient.read patient/Observation.read launch online_access openid profile'
+				});
+			} catch(exp) {
+				alert("An error occured trying to authenticate.\nThis is expected if you are just looking at this page in a browser.");				
+				document.getElementById("error").innerHTML = "<h1>Launch Page For smart-on-fhir-examples</h1> <p>Could not authenticate.  This is expected if you are not launching this page from an EMR.  </p>"
+			}
+		</script>
+
+	</body>
+
+</html>
+

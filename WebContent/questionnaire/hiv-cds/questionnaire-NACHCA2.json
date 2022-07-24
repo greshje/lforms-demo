@@ -1,0 +1,66 @@
+{
+  "extension": [
+    {
+      "valueCode": "shareable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "computable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "publishable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "structured",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/hiv-test#Observation.code",
+      "text": "Concepts Associated with HIV Testing",
+      "type": "choice"
+    },
+    {
+      "linkId": "2",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/hiv-test-ordered#ServiceRequest.code",
+      "text": "Concepts Associated with Ordering an HIV Test",
+      "type": "choice",
+      "answerOption": [
+        {"valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "312484002",
+          "display": "Human immunodeficiency virus test offered (finding)"
+        }},
+        {"valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "31676001",
+          "display": "Human immunodeficiency virus antigen test (procedure)"
+        }}
+      ]
+    }
+  ],
+  "name": "NACHCA2",
+  "description": "TODO: description goes here",
+  "experimental": false,
+  "id": "NACHCA2",
+  "title": "NACHC.A2 HIV test",
+  "useContext": [{
+    "valueCodeableConcept": {"coding": [{
+      "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+      "code": "NACHC.A2",
+      "display": "HIV test"
+    }]},
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    }
+  }],
+  "url": "http://fhir.org/guides/nachc/hiv-cds/Questionnaire/NACHCA2",
+  "resourceType": "Questionnaire",
+  "status": "active"
+}

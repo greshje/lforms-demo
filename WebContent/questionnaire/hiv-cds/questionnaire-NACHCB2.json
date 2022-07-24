@@ -1,0 +1,96 @@
+{
+  "extension": [
+    {
+      "valueCode": "shareable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "computable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "publishable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "structured",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/hepatitis-c-test#Observation.code",
+      "text": "Concepts Associated with HCV Testing",
+      "type": "choice"
+    },
+    {
+      "linkId": "2",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/hepatitis-c-procedures#Procedure.code",
+      "text": "Concepts Associated with HCV Procedures",
+      "type": "choice",
+      "answerOption": [
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE113",
+          "display": "RNA testing for Hepatitis C documented as performed within 6 months prior to initiation of antiviral treatment for Hepatitis C (HEP-C)"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE114",
+          "display": "Hepatitis C quantitative RNA testing documented as performed at 12 weeks from initiation of antiviral treatment (HEP-C)"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE115",
+          "display": "Ribonucleic acid (RNA) testing for Hepatitis C viremia ordered or results documented (HEP C)"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE116",
+          "display": "Hepatitis C genotype testing documented as performed prior to initiation of antiviral treatment for Hepatitis C (HEP C)"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE117",
+          "display": "Hepatitis C screening documented as performed (HIV)"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE118",
+          "display": "Patient receiving antiviral treatment for Hepatitis C (HEP-C)"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE119",
+          "display": "Collection of venous blood by venipuncture"
+        }},
+        {"valueCoding": {
+          "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/hiv-custom",
+          "code": "NACHC.B2.DE120",
+          "display": "Infectious disease, chronic hepatitis C virus (HCV) infection, six biochemical assays (ALT, A2-macroglobulin, apolipoprotein A-1, total bilirubin, GGT, and haptoglobin) utilizing serum, prognostic algorithm reported as scores for fibrosis and necroinflammatory activity in liver"
+        }}
+      ]
+    }
+  ],
+  "name": "NACHCB2",
+  "description": "TODO: description goes here",
+  "experimental": false,
+  "id": "NACHCB2",
+  "title": "NACHC.B2 HCV test",
+  "useContext": [{
+    "valueCodeableConcept": {"coding": [{
+      "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+      "code": "NACHC.B2",
+      "display": "HCV test"
+    }]},
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    }
+  }],
+  "url": "http://fhir.org/guides/nachc/hiv-cds/Questionnaire/NACHCB2",
+  "resourceType": "Questionnaire",
+  "status": "active"
+}

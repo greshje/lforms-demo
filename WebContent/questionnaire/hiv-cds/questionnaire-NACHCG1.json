@@ -1,0 +1,77 @@
+{
+  "extension": [
+    {
+      "valueCode": "shareable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "computable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "publishable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "structured",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/post-exposure-prophylaxis#Procedure.code",
+      "text": "Concepts and Procedures Identifying Post Exposure Prophylaxis",
+      "type": "choice",
+      "answerOption": [
+        {"valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "409516001",
+          "display": "Post-exposure prophylaxis"
+        }},
+        {"valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "736459001",
+          "display": "Administration of prophylactic agent after sexual exposure (procedure)"
+        }},
+        {"valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "473382005",
+          "display": "Post exposure prophylaxis with antiviral therapy for potential sexual exposure to human immunodeficiency virus (procedure)"
+        }}
+      ]
+    },
+    {
+      "linkId": "2",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/pep-medication-prescriptions#MedicationRequest.medication[x]",
+      "text": "List of Medication Prescriptions for Non-Occupational Post Exposure Prophylaxis",
+      "type": "choice"
+    },
+    {
+      "linkId": "3",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/pep-dispensed-medications#MedicationDispense.medication[x]",
+      "text": "List of Medications Provisioned and Supplied for Non-Occupational Post Exposure Prophylaxis",
+      "type": "choice"
+    }
+  ],
+  "name": "NACHCG1",
+  "description": "TODO: description goes here",
+  "experimental": false,
+  "id": "NACHCG1",
+  "title": "NACHC.G1 Pep",
+  "useContext": [{
+    "valueCodeableConcept": {"coding": [{
+      "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+      "code": "NACHC.G1",
+      "display": "Pep"
+    }]},
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    }
+  }],
+  "url": "http://fhir.org/guides/nachc/hiv-cds/Questionnaire/NACHCG1",
+  "resourceType": "Questionnaire",
+  "status": "active"
+}

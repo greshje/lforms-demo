@@ -1,0 +1,198 @@
+{
+  "extension": [
+    {
+      "valueCode": "shareable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "computable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "publishable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "structured",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/previous-hiv-screening#Observation.value[x]",
+      "text": "Whether the patient has previously been screened for HIV?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "2",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/previous-hiv-diagnosis#Observation.value[x]",
+      "text": "Whether the patient has previously been diagnosed with HIV?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "3",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/patient-currently-pregnant#Observation.value[x]",
+      "text": "Whether the patient is currently pregnant?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "4",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/patient-diagnosed-with-hcv#Observation.value[x]",
+      "text": "Whether the patient has been diagnosed with HCV?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "5",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/patient-diagnosed-with-syphilis#Observation.value[x]",
+      "text": "Whether the patient has been diagnosed with Syphilis?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "6",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/patient-diagnosed-with-gonorrhea#Observation.value[x]",
+      "text": "Whether the patient has been diagnosed with Gonorrhea?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "7",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/patient-diagnosed-with-chlamydia#Observation.value[x]",
+      "text": "Whether the patient has been diagnosed with Chlamydia?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "8",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/patient-has-used-injection-drugs#Observation.value[x]",
+      "text": "Whether the patient has been using Injection Drugs?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "9",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/seeking-std-treatment#Observation.value[x]",
+      "text": "Whether the patient is currently seeking evaluation and treatment of an STD?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "10",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/previous-experience-with-prep#Observation.value[x]",
+      "text": "Whether the patient has previously been given PREP?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "11",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-past-year#Observation.value[x]",
+      "text": "Have you been sexually active in the past year?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "12",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-history#Observation.value[x]",
+      "text": "Have you ever been sexually active?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "13",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-men#Observation.value[x]",
+      "text": "Do you have sex with men?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "14",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-women#Observation.value[x]",
+      "text": "Do you have sex with women?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "15",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-number-of-partners#Observation.value[x]",
+      "text": "Have you had more than 1 sexual partner since last being tested for HIV?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "16",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-new-partner-past-3-months#Observation.value[x]",
+      "text": "In the past 3 months, have you had sex with someone you didnâ\u20ac™t know or had just met?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "17",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-partners-history#Observation.value[x]",
+      "text": "Do you know whether your partner has other sexual partners?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "18",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-partners-number-of-partners#Observation.value[x]",
+      "text": "Do you know whether your partner has had more than 1 sexual partner since their last HIV test?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "19",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-partners-hiv-history#Observation.value[x]",
+      "text": "Do you know whether your partner has HIV?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "20",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-drug-or-alcohol-use#Observation.value[x]",
+      "text": "Have you or any of your partners used alcohol or drugs when you had sex?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "21",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-exchanged-for-sex#Observation.value[x]",
+      "text": "Have you ever exchanged sex for drugs or money?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "22",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-coercion#Observation.value[x]",
+      "text": "Have you ever been coerced or pressured to have sex?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "23",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-kind-of-sex-anal#Observation.value[x]",
+      "text": "In the past 3 months have you had anal sex?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "24",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-male-kind-of-sex-receptive-anal#Observation.value[x]",
+      "text": "If Male: In the past 3 months have you had receptive anal sex?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "25",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-male-kind-of-sex-insertive-anal#Observation.value[x]",
+      "text": "If Male: In the past 3 months have you had insertive anal sex?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "26",
+      "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/sexual-activity-kind-of-sex-vaginal#Observation.value[x]",
+      "text": "In the past 3 months have you had vaginal sex?",
+      "type": "boolean"
+    }
+  ],
+  "name": "NACHCH1",
+  "description": "TODO: description goes here",
+  "experimental": false,
+  "id": "NACHCH1",
+  "title": "NACHC.H1 Risk Factors",
+  "useContext": [{
+    "valueCodeableConcept": {"coding": [{
+      "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+      "code": "NACHC.H1",
+      "display": "Risk Factors"
+    }]},
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    }
+  }],
+  "url": "http://fhir.org/guides/nachc/hiv-cds/Questionnaire/NACHCH1",
+  "resourceType": "Questionnaire",
+  "status": "active"
+}

@@ -1,0 +1,46 @@
+{
+  "extension": [
+    {
+      "valueCode": "shareable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "computable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "publishable",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+    },
+    {
+      "valueCode": "structured",
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
+    }
+  ],
+  "item": [{
+    "linkId": "1",
+    "definition": "http://fhir.org/guides/nachc/hiv-cds/StructureDefinition/syphilis-diagnosis#Condition.code",
+    "text": "Concepts Associated with Syphilis Diagnosis",
+    "type": "choice"
+  }],
+  "name": "NACHCC1",
+  "description": "TODO: description goes here",
+  "experimental": false,
+  "id": "NACHCC1",
+  "title": "NACHC.C1 Syphilis",
+  "useContext": [{
+    "valueCodeableConcept": {"coding": [{
+      "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+      "code": "NACHC.C1",
+      "display": "Syphilis"
+    }]},
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    }
+  }],
+  "url": "http://fhir.org/guides/nachc/hiv-cds/Questionnaire/NACHCC1",
+  "resourceType": "Questionnaire",
+  "status": "active"
+}
